@@ -11,7 +11,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="{% url 'project_index' %}">Tate Frost Portfolio</a>
+        <a class="navbar-brand" href="index.html">Tate Frost Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -19,13 +19,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="">About me</a>
+              <a class="nav-link" href="index.html">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Music</a>
+              <a class="nav-link" href="music.html">Music</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Projects</a>
+              <a class="nav-link" href="projects.html">Projects</a>
             </li>
           </ul>
         </div>
@@ -33,7 +33,23 @@
 </nav><br>
 
 <div class="container">
-    {% block page_content %}{% endblock %}
+  <h1>My-change</h1>
+  <div class="row">
+      <div class="col-md-8">
+          <img src="static/imgs/my-change-photo.png" alt="" width="100%" height="auto" id="projectPhoto">
+      </div>
+      <div class="col-md-4" id="projects">
+          <h5>About The Project:</h5>
+          <p></p>
+          <br>
+          <h5>Technology Utilized:</h5>
+          <p></p>
+          <h5>Github Repository Link:</h5>
+          <a href="https://github.com/tatefrost/capstone.git" target="_blank">https://github.com/tatefrost/capstone.git</a>
+          <h5>Video Demo Link:</h5>
+          <a href="https://drive.google.com/file/d/1488RqE4TonEw0eObpXwCSvaKB1wDALFm/view?usp=sharing" target="_blank">https://drive.google.com/file/d/1488RqE4TonEw0eObpXwCSvaKB1wDALFm/view?usp=sharing</a>
+      </div>
+  </div>
 </div>
 
 
