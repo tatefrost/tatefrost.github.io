@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Tate's portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css" />
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="">Tate Frost Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Music</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+</nav><br>
+
+<div class="container" id="cardBorder">
+  <div class="card mb-2">
+    <div class="row">
+      <div class="col-sm text-center" id="aboutMe">
+        <span class="name" id="first">TATE </span><span style="color:#FF9966" class="name" id="last">FROST</span>
+        <h3>Salt Lake City, UT ‧ tatefrost96@gmail.com</h3>
+        <p>Experienced Python developer, eager and ready to learn anything software.</p>
+        <div class="row">
+          <div class="col-sm" id="cardBorder">
+            <a href="https://docs.google.com/document/d/12QEgAKQ3NGxJnGTcjPDemnMkYcZ9nBKsOhmGJBwvKxI/edit?usp=sharing" target="_blank">
+              <img id="google" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-plain.svg" />
+            </a><br><br>
+            <a class="card-title" href="https://docs.google.com/document/d/12QEgAKQ3NGxJnGTcjPDemnMkYcZ9nBKsOhmGJBwvKxI/edit?usp=sharing" target="_blank">Resume</a>
+          </div>
+          <br><br>
+          <div class="col-sm" id="cardBorder">
+            <a href="{% url 'project_index' %}">
+              <img id="projectsButton" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" />
+            </a><br><br>
+            <a class="card-title" href="{% url 'project_index' %}">Projects</a>
+          </div>
+        </div>
+          <div class="row">
+            <div class="col-sm" id="cardBorder">
+              <a href="https://github.com/tatefrost" target="_blank">
+                <img id="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github">
+              </a><br><br>
+              <a class="card-title" href="https://github.com/tatefrost" target="_blank">Github</a>
+            </div>
+                <div class="col-sm" id="cardBorder">
+                  <a href="https://www.linkedin.com/in/tate-frost/" target="_blank">
+                    <img id="linkedin" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="linkedIn">
+                  </a><br><br>
+                  <a class="card-title" href="https://www.linkedin.com/in/tate-frost/" target="_blank">LinkedIn</a>
+                </div>
+          </div>
+      </div>
+        <div class="col-sm">
+          <img id="me" src="static/imgs/IMG_4530.jpg">
+        </div>
+      </div>
+  </div>
+</div>
+<br><br>
+<div class="container">
+  <!-- <div class="card mb-2"> -->
+      <h1>Skills</h1><br>
+      <div class="row">
+        <div class="col-sm text-center" id="cardBorder">
+          <img id="html" class="lang" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" alt="HTML5" />
+          <div class="card-body">
+            <h5 class="card-title" id="cardBorder">HTML5</h5>
+          </div>
+        </div>
+  
+        <div class="col-sm text-center" id="cardBorder">
+          <img id="css" class="lang" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="CSS" />
+          <div class="card-body">
+            <h5 class="card-title" id="cardBorder">CSS</h5>
+          </div>
+        </div>
+  
+        <div class="col-sm text-center" id="cardBorder">
+          <img id="JavaScript" class="lang" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+          <div class="card-body">
+            <h5 class="card-title" id="cardBorder">JavaScript</h5>
+          </div>
+        </div>
+  
+        <div class="col-sm text-center" id="cardBorder">
+          <img id="Python" class="lang" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" alt="Python" />
+          <div class="card-body">
+            <h5 class="card-title" id="cardBorder">Python</h5>
+          </div>
+        </div>
+      </div>
+          <div class="row">
+            <div class="col-sm text-center" id="cardBorder">
+              <img id="Django" class="lang" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" alt="Django" />
+              <div class="card-body">
+                <h5 class="card-title" id="cardBorder">Django</h5>
+              </div>
+            </div>
+  
+            <div class="col-sm text-center" id="cardBorder">
+              <img id="Flask" class="lang" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" />
+              <div class="card-body">
+                <h5 class="card-title" id="cardBorder">Flask</h5>
+              </div>
+            </div>
+  
+    
+            <div class="col-sm text-center" id="cardBorder">
+              <img id="Postgres" class="lang" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain-wordmark.svg" alt="Postgres" />
+              <div class="card-body">
+                <h5 class="card-title" id="cardBorder">PostgreSQL</h5>
+              </div>
+            </div>
+    
+            <div class="col-sm text-center" id="cardBorder">
+              <img id="SQLAlchemy" class="lang" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-plain.svg" alt="SQLAlchemy" />
+              <div class="card-body">
+                <h5 class="card-title" id="cardBorder">SQLAlchemy</h5>
+              </div>
+            </div>
+        </div>
+  <!-- </div> -->
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
