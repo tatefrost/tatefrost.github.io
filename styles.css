@@ -23,10 +23,9 @@ body {
   height: auto;
 }
 
-#musicButton{
+#projectsButton{
   max-width: 30%;
   height: auto;
-  margin-top: 15px;
 }
 
 h1, span {
